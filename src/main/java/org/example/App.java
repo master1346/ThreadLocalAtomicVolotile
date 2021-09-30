@@ -19,7 +19,7 @@ public class App
         thread2.join();
         thread3.join();
 
-        Runnable run1 = () -> System.out.println("Сумма выручки трех магазинов составила: " + Magazin.money.get());
-        new Thread(null, run1).start();
+        magazin1.printAtomic();
+
     }
 }
